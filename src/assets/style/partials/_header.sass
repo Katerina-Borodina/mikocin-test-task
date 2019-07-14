@@ -1,0 +1,358 @@
+.header
+  background: url(../img/header-bg.png) no-repeat top right
+  position: relative
+  //background-position: top right
+  background-size: 100% 100%
+  margin-bottom: 110px
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    background-image: url("../img/header-left.png")
+    background-repeat: no-repeat
+    width: 100%
+    height: 100%
+    z-index: -1
+    background-size: cover
+    background-position: 100% 0
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    background: url("../img/wave-top.png") no-repeat
+    width: 100%
+    height: 100%
+    background-size: contain
+    background-position-y: bottom
+  &_top
+    padding-top: 14px
+    display: flex
+    justify-content: flex-end
+    margin-bottom: 55px
+    &-logo
+      margin-right: 88px
+      display: flex
+      flex-direction: row
+      align-items: center
+      .logo-img
+        width: 81px
+        height: 56px
+        margin-right: 17px
+        img
+          max-width: 100%
+      .logo-text
+        font-size: 22px
+        font-weight: 900
+        color: #383334
+    &-list
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      margin-right: 20px
+      li
+        display: flex
+        flex-direction: row
+        &:not(:last-child)
+          margin-right: 39px
+        div
+          margin-right: 13px
+          img
+            max-width: 100%
+        p
+          font-style: italic
+          font-size: 16px
+          font-weight: 400
+          color: #666666
+  &_bottom
+    display: flex
+    justify-content: space-between
+    height: auto
+    &-left
+      position: relative
+      width: 470px
+      padding-top: 40px
+      height: 700px
+      .legs
+        position: absolute
+        z-index: 2
+        top: -345px
+        left: -275px
+        max-width: 747px
+      .circle
+        position: relative
+        z-index: 1
+        left: -175px
+        width: 628px
+        top: -30px
+      .tabl
+        position: relative
+        z-index: 2
+        left: -85px
+        width: 628px
+        top: -300px
+    &-desc
+      display: flex
+      flex-direction: column
+      max-width: 367px
+      height: max-content
+      z-index: 5
+      .desc_title
+        font-size: 44px
+        color: #383334
+        font-weight: 900
+        margin-bottom: 45px
+        &-small
+          font-size: 34px
+          span
+            position: relative
+            z-index: 1
+          .border-orange:after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 5px
+            background-color: #ff6b00
+            bottom: -1px
+            left: 0
+            z-index: -1
+          .border-green:after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 5px
+            background-color: #a7c93d
+            bottom: -1px
+            left: 0
+            z-index: -1
+      .desc_item
+        display: flex
+        flex-direction: row
+        position: relative
+        align-items: center
+        &:nth-child(1)
+          margin-bottom: 45px
+        &:nth-child(2)
+          margin-bottom: 57px
+        &:nth-child(3)
+          margin-bottom: 0
+        &:nth-child(1)::before
+          content: ''
+          position: absolute
+          left: 26px
+          bottom: -38px
+          display: block
+          width: 9px
+          height: 31px
+          background: url(../img/desc-list-arrow-top.png) 0 0 no-repeat
+        &:nth-child(2)::before
+          content: ''
+          position: absolute
+          left: 26px
+          bottom: -55px
+          display: block
+          width: 9px
+          height: 41px
+          background: url(../img/desc-list-arrow-plus.png) 0 0 no-repeat
+        &-circle
+          color: #fff
+          font-size: 20px
+          font-weight: 700
+          margin: 0 27px 0 7px
+          min-width: 46px
+          width: 46px
+          height: 46px
+          display: flex
+          justify-content: center
+          align-items: center
+          background-color: #a7c93d
+          border-radius: 50%
+          box-shadow: 0 0 0 7px #e8edc9
+        &-text
+          font-size: 20px
+          color: #444
+          line-height: 1.1
+          .text-medium
+            font-weight: 500
+            color: #000
+            position: relative
+          .line:after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 3px
+            bottom: -1px
+            left: 0
+          .line-orange:after
+            background-color: #ff6b00
+          .line-green:after
+            background-color: #a7c93d
+    &-form
+      background: url("../img/form-bg.png") no-repeat top
+      width: 270px
+      z-index: 1
+      height: max-content
+      .form
+        padding: 0 26px 20px
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          top: 175px
+          right: -27px
+          display: block
+          width: 49px
+          height: 233px
+          background: url(../img/form-arrow.png) 0 0 no-repeat
+        &_desc
+          &-top
+            font-size: 16px
+            font-weight: 400
+            color: #444
+            display: flex
+            justify-content: center
+            align-items: end
+            margin-bottom: 40px
+            img
+              padding-right: 8px
+          &-bottom
+            font-size: 18px
+            color: #333333
+            text-align: center
+            margin-bottom: 26px
+            span
+              color: #9dbd39
+              font-weight: 500
+        &_title
+          text-align: center
+          font-size: 20px
+          color: #000000
+          padding: 0 26px 18px 26px
+          span
+            color: #ff6b00
+            font-weight: 500
+        &_price
+          display: flex
+          justify-content: space-between
+          padding: 0 10px
+          margin-bottom: 15px
+          &-title
+            font-size: 14px
+            padding-bottom: 13px
+            &-old
+              color: #666
+            &-new
+              color: #000
+          &-value
+            display: flex
+            line-height: 24px
+            font-size: 34px
+            &_previous
+              color: #0b0b0b
+              font-weight: 300
+              line-height: 32px
+              margin-top: 4px
+              position: relative
+              &::before
+                content: ''
+                position: absolute
+                top: 47%
+                left: -4px
+                display: block
+                width: 107%
+                height: 1px
+                background-color: #eb8050
+                transform: rotate(17deg)
+              &::after
+                content: ''
+                position: absolute
+                top: 49%
+                left: -4px
+                display: block
+                width: 112%
+                height: 1px
+                background-color: #eb8050
+                transform: rotate(-17deg)
+            &_accent
+              color: #000000
+              font-weight: 900
+              background-color: #ffbf02
+              border-radius: 5px
+              padding: 7px 10px
+        &_general
+          &-name
+            position: relative
+            margin-bottom: 10px
+            &::before
+              content: ''
+              position: absolute
+              top: 50%
+              left: 21px
+              display: block
+              width: 19px
+              height: 23px
+              background: url(../img/form-name.svg) 0 0 no-repeat
+              transform: translateY(-50%)
+            input
+              display: block
+              width: 100%
+              padding: 25px 25px 20px 55px
+              background-color: #eef2f7
+              border-radius: 100px
+              border: none
+              outline: none
+              font-size: 16px
+              color: #666666
+              box-shadow: inset 0 2px 7px 0 rgba(0, 0, 0, 0.04)
+          &-tel
+            position: relative
+            margin-bottom: 15px
+            &::before
+              content: ''
+              position: absolute
+              top: 51%
+              left: 23px
+              display: block
+              width: 21px
+              height: 24px
+              background: url(../img/form-tel.svg) 0 0 no-repeat
+              transform: translateY(-50%)
+            input
+              display: block
+              width: 100%
+              padding: 25px 25px 20px 55px
+              background-color: #eef2f7
+              border-radius: 100px
+              border: none
+              outline: none
+              font-size: 16px
+              color: #666666
+              box-shadow: inset 0 2px 7px 0 rgba(0, 0, 0, 0.04)
+          .btn-wrapper
+            margin-bottom: 20px
+            width: 100%
+            padding: 5px
+            background: linear-gradient(to right, #ffbe02 0%, #ffcc02 100%)
+            border-radius: 100px
+            cursor: pointer
+            .btn
+              display: block
+              padding: 10px 40px
+              font-size: 28px
+              line-height: 0.6
+              font-weight: 700
+              background-color: transparent
+              border: 3px solid #ffd24e
+              border-radius: 100px
+              span
+                font-size: 16px
+        &_security
+          font-size: 14px
+          color: #666666
+          display: flex
+          flex-direction: row
+          align-items: center
+          justify-content: center
+          img
+            margin-right: 12px

@@ -1,0 +1,106 @@
+.effect
+  background: #fff
+  position: relative
+  padding-top: 150px
+  margin-bottom: 65px
+  &::after
+    content: ''
+    position: absolute
+    display: block
+    background: url("../img/wave-bottom.png") no-repeat bottom
+    bottom: -85px
+    height: 85px
+    width: 100%
+  &::before
+    content: ''
+    position: absolute
+    display: block
+    background: url("../img/wave-top.png") no-repeat center
+    top: -20px
+    height: 179px
+    width: 100%
+
+  &_title
+    font-size: 47px
+    font-weight: 900
+    color: #000000
+    text-align: center
+    position: relative
+    margin-bottom: 24px
+    span
+      color: #fa4f01
+    &::before
+      content: ''
+      position: absolute
+      display: block
+      width: 92px
+      height: 65px
+      background: url("../img/effect-title.png") no-repeat center
+      top: -75px
+      transform: translateX(-50%)
+      left: 50%
+  &_desc
+    margin-bottom: 90px
+    font-size: 23px
+    color: #444444
+    text-align: center
+  &_list
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-bottom: 32px
+  &_item
+    width: 370px
+    min-height: 307px
+    background: url("../img/effect-item1.png") no-repeat top
+    border-radius: 4px
+    text-align: center
+    position: relative
+    padding: 85px 31px 0 31px
+    &:nth-child(2)
+      .effect_item-img_wrapper
+        top: -70px
+    &:nth-child(3)
+      background: url("../img/effect-item2.png") no-repeat top
+      padding: 85px 20px 0 20px
+    &-img
+      &_wrapper
+        background-color: transparent
+        position: absolute
+        width: 100px
+        height: 100px
+        border-radius: 50%
+        top: -60px
+        left: 50%
+        transform: translate(-50%, 0)
+        display: flex
+        align-items: center
+        justify-content: center
+    &-title
+      font-size: 24px
+      font-weight: 700
+      color: #000000
+      margin-bottom: 15px
+    &-desc
+      font-size: 18px
+      font-weight: 400
+      color: #444
+      line-height: 1.44
+      span
+        color: #000000
+        font-weight: 500
+  &_ask
+    width: 871px
+    height: 100px
+    padding: 4px
+    border-radius: 12px
+    background: url("../img/ask.png") no-repeat top left
+    margin: 0 auto
+    p
+      font-size: 27px
+      font-weight: 500
+      color: #000000
+      text-align: center
+      padding-top: 30px
+      span
+        color: #f64d01

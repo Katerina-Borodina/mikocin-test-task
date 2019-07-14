@@ -1,0 +1,177 @@
+.information
+  background-image: linear-gradient(to left, #e9f5f7 1%, #f8fdfe 51%, #e9f5f7)
+  padding-top: 150px
+  padding-bottom: 83px
+  &_title
+    font-size: 48px
+    font-weight: 900
+    color: #383334
+    text-align: center
+    position: relative
+    margin-bottom: 80px
+    &::before
+      content: ''
+      position: absolute
+      display: block
+      width: 92px
+      height: 65px
+      background: url("../img/infection-title.png") no-repeat center
+      top: -75px
+      transform: translateX(-50%)
+      left: 50%
+  &_list
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-bottom: 60px
+  &_item
+    width: 370px
+    min-height: 590px
+    background: url("../img/info-item.svg") no-repeat center
+    border-radius: 10px
+    box-shadow: 0 10px 15px 0 rgba(37, 83, 129, 0.08)
+    text-align: center
+    position: relative
+    padding: 70px 41px 0 42px
+    &:nth-child(1)
+      padding: 70px 41px 0 42px
+    &:nth-child(2)
+      padding: 70px 28px 0 28px
+    &:nth-child(3)
+      padding: 70px 48px 0 47px
+    &::after
+      content: ''
+      position: absolute
+      display: block
+      top: 0
+      right: 2px
+      box-shadow: 0px -6px 13px -3px rgba(37, 83, 129, 0.08)
+      width: 134px
+      height: 13px
+      border-top: #a8c53a 4px solid
+      border-radius: 0 10px
+    &::before
+      content: ''
+      position: absolute
+      display: block
+      top: 0
+      left: 0
+      box-shadow: 0px -6px 13px -3px rgba(37, 83, 129, 0.08)
+      width: 134px
+      height: 13px
+      border-top: #a8c53a 4px solid
+      border-radius: 10px 0
+    &-img
+      &_wrapper
+        background-color: transparent
+        position: absolute
+        width: 100px
+        height: 100px
+        border-radius: 50%
+        top: -50px
+        left: 50%
+        transform: translate(-50%, 0)
+        display: flex
+        align-items: center
+        justify-content: center
+    &-title
+      font-size: 24px
+      font-weight: 700
+      color: #000000
+      margin-bottom: 15px
+    &-desc
+      font-size: 18px
+      font-weight: 500
+      color: #222
+      line-height: 1.44
+      span
+        font-size: 16px
+        font-style: italic
+        color: #666666
+        line-height: 1.6
+    &-warning
+      font-size: 24px
+      font-weight: 900
+      color: #ff6b00
+      margin-bottom: 20px
+      position: relative
+      margin-top: 60px
+
+      &::after
+        content: ''
+        position: absolute
+        display: block
+        background-color: #fff
+        width: 22px
+        height: 22px
+        left: 47%
+        top: -40px
+        transform: rotate(45deg)
+        box-sizing: border-box
+        border-bottom: 1px solid #d2dce6
+        border-right: 1px solid #d2dce6
+      &::before
+        content: ''
+        position: absolute
+        display: block
+        left: 50%
+        transform: translate(-50%, 0)
+        background-color: #d2dce6
+        height: 1px
+        width: 330px
+        top: -30px
+    &-text
+      font-size: 18px
+      font-weight: 400
+      color: #444
+      line-height: 1.44
+      span
+        font-weight: 500
+        color: #000000
+  &_warning
+    text-align: center
+    font-size: 21px
+    color: #444444
+    font-weight: 400
+    line-height: 1.27
+    position: relative
+    span
+      color: #000000
+      font-weight: 500
+    &:before
+      content: 'вывод:'
+      position: absolute
+      display: block
+      top: -48px
+      z-index: 2
+      font-size: 22px
+      color: #000000
+      font-weight: 700
+      text-transform: uppercase
+      width: 100%
+    &-wrapper
+      border-radius: 10px
+      border: solid 3px #f4d3bb
+      padding: 34px 74px
+      position: relative
+      display: flex
+      justify-content: center
+      &::after
+        content: ''
+        position: absolute
+        display: block
+        top: 0
+        width: 170px
+        height: 7px
+        transform: translateY(-50%)
+        background-color: #f3f9ff
+      &::before
+        content: '!'
+        position: absolute
+        display: block
+        top: 0
+        z-index: 1
+        color: #f4d3bb
+        font-size: 70px
+        font-weight: 700
+        transform: translateY(-50%)
